@@ -1,0 +1,48 @@
+\renewcommand{\workinggrouptitle}{Computational Systems}
+\renewcommand{\workinggroupboxcolor}{unilightskyblue}
+\renewcommand{\workinggroupboxtextcolor}{black}
+
+\renewcommand{\createprojectheadpage}{
+%------------------------------------------------
+% Systems Research Main Page
+\marginpar{
+	\begin{sideways}
+	\workinggrouptitle
+	\end{sideways}
+}
+\section{\workinggrouptitle}
+\begin{minipage}[t]{0.6\textwidth}
+	\input{CS/overview.tex}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}[t]{0.33\textwidth}
+	\begin{mdframed}[roundcorner=40pt,backgroundcolor=\workinggroupboxcolor,innertopmargin=20pt,innerbottommargin=20pt]
+	  \input{CS/staff.tex}
+	\end{mdframed}
+\end{minipage}
+} 
+
+\renewcommand{\createprojectpage}[2]{
+%------------------------------------------------
+% CS PROJECTS Page
+\marginpar{
+	\begin{sideways}
+	\workinggrouptitle
+	\end{sideways}
+}
+\subsection{#2}
+%\begin{minipage}[t]{0.6\textwidth}
+%\end{minipage}
+
+\begin{wrapfigure}{r}[0pt]{0cm}
+\setlength{\hspace{0.9cm}\wrapoverhang}{\marginparwidth}
+	\begin{minipage}[t]{0.35\textwidth}
+		\begin{mdframed}[roundcorner=40pt,backgroundcolor=\workinggroupboxcolor,innertopmargin=50pt,innerbottommargin=50pt]		  
+			\input{CS/project_#1/facts.tex}
+		\end{mdframed}
+	\end{minipage}
+\end{wrapfigure}
+\hspace{1cm}
+\input{CS/project_#1/abstract.tex}
+\clearpage
+} 

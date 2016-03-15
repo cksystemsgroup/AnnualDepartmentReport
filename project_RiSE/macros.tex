@@ -1,0 +1,300 @@
+
+\newcommand{\Buchi}{B\"{u}chi\xspace}
+\newcommand{\buchi}{B\"{u}chi\xspace}
+\newcommand{\kovacs}{Kov\'acs\xspace}
+\newcommand{\rise}{RiSE\xspace}
+\newcommand{\shine}{SHiNE\xspace}
+\newcommand{\NN}{\fbox{\bf XXX\ }}
+\newcommand{\logics}{LogiCS\xspace}
+
+
+
+% some math operators:
+\DeclareMathOperator{\nextt}{\mathsf{X}}
+\newcommand{\until}{\mathbin{\mathsf{U}}}
+\newcommand{\weakuntil}{\mathbin{\mathsf{W}}}
+\newcommand{\since}{\mathbin{\mathsf{S}}}
+\newcommand{\releases}{\mathbin{\mathsf{R}}}
+\DeclareMathOperator{\always}{\mathsf{G}}
+\DeclareMathOperator{\eventually}{\mathsf{F}}
+\newcommand{\true}{\mathsf{true}}
+\newcommand{\false}{\mathsf{false}}
+\DeclareMathOperator{\scope}{\mathbin{.}}
+
+% Abbreviated Macros for project parts:
+\newcommand{\AbrevPPTH}{PP2}
+\newcommand{\AbrevPPHV}{PP3}
+\newcommand{\AbrevPPUS}{PP5}
+\newcommand{\AbrevPPRB}{PP6}
+\newcommand{\AbrevPPKC}{PP7}
+\newcommand{\AbrevPPAB}{PP8}
+\newcommand{\AbrevPPUE}{PP9}
+\newcommand{\AbrevPPCK}{PP11}
+\newcommand{\AbrevPPRG}{PP12}
+
+
+% Macros for project parts:
+\newcommand{\PPone}{PP~1 (Coordination)\xspace}
+\newcommand{\PPTH}{PP~2 (Henzinger)\xspace}
+\newcommand{\PPHV}{PP~3 (Veith)\xspace}
+\newcommand{\PPUS}{PP~5 (Schmid)\xspace}
+\newcommand{\PPRB}{PP~6 (Bloem)\xspace}
+\newcommand{\PPKC}{PP~7 (Chatterjee)\xspace}
+\newcommand{\PPAB}{PP~8 (Biere)\xspace}
+\newcommand{\PPUE}{PP~9 (Egly)\xspace}
+\newcommand{\PPCK}{PP~11 (Kirsch)\xspace}
+\newcommand{\PPRG}{PP~12 (Grosu)\xspace}
+
+% Macros for project part full names:
+\newcommand{\PPoneF}{PP~1: Coordination\xspace}
+\newcommand{\PPTHF}{PP~2: New Concurrency Paradigms\xspace}
+\newcommand{\PPHVF}{PP~3: Tools for Concurrent and Distributed Systems\xspace}
+\newcommand{\PPUSF}{PP~5: Reconciling Distributed and Real-Time Computing\xspace}
+\newcommand{\PPRBF}{PP~6: Synthesis\xspace}
+\newcommand{\PPKCF}{PP~7: Game Theory\xspace}
+\newcommand{\PPABF}{PP~8: Bit-Precise Reasoning\xspace}
+\newcommand{\PPUEF}{PP~9: Quantified Boolean Formulas\xspace}
+\newcommand{\PPCKF}{PP~11: Relaxed and Probabilistic Systems\xspace}
+\newcommand{\PPRGF}{PP~12: Probabilistic Analysis of Distributed Systems\xspace}
+
+% Macros for task numbers:
+\newcommand{\THOne}{TH1\xspace}
+\newcommand{\THTwo}{TH2\xspace}
+\newcommand{\THThree}{TH3\xspace}
+\newcommand{\HVOne}{HV1\xspace}
+\newcommand{\HVTwo}{GW$_{\textsf{HV2}}$\xspace}
+\newcommand{\HVThree}{FZ$_{\textsf{HV3}}$\xspace}
+\newcommand{\USOne}{US1\xspace}
+\newcommand{\USTwo}{EB$_{\textsf{US2}}$\xspace}
+\newcommand{\RBOne}{RB1\xspace}
+\newcommand{\RBTwo}{RB2\xspace}
+\newcommand{\RBThree}{RB3\xspace}
+\newcommand{\KCOne}{KC1\xspace}
+\newcommand{\KCTwo}{KC2\xspace}
+\newcommand{\KCThree}{KC3\xspace}
+\newcommand{\ABOne}{AB1\xspace}
+\newcommand{\ABTwo}{AB2\xspace}
+\newcommand{\ABThree}{MS$_{\textsf{AB3}}$\xspace}
+\newcommand{\UEOne}{LK$_{\textsf{UE1}}$\xspace}
+\newcommand{\UETwo}{UE2\xspace}
+\newcommand{\CKOne}{CK1\xspace}
+\newcommand{\CKTwo}{AS$_{\textsf{CK2}}$\xspace}
+\newcommand{\RGOne}{RG1\xspace}
+% Macros for task titles only:
+\newcommand{\THOneT}{Testing Coverage Guided Abstraction Refinement for Concurrent Programs\xspace}
+\newcommand{\THTwoT}{Synthesis of Embedded Programs from Mixed Data and Control Flow Models\xspace}
+\newcommand{\THThreeT}{Relaxed Semantics for Concurrent Programs\xspace}
+\newcommand{\HVOneT}{Fault Model Assessment for Distributed Algorithms\xspace}
+\newcommand{\HVTwoT}{Concurrency Bug Explanation\xspace}
+\newcommand{\HVThreeT}{Automated Bound Analysis for Concurrent Programs\xspace}
+\newcommand{\USOneT}{Modeling and Analysis of Distributed Systems with Non-Zero-Time Computations\xspace}
+\newcommand{\USTwoT}{Modeling and Analysis of Parametric, Probabilistic and Parameterized Timed Systems\xspace}
+\newcommand{\RBOneT}{Synthesis of Concurrency Constructs\xspace}
+\newcommand{\RBTwoT}{Parameterized and Symmetric Synthesis\xspace}
+\newcommand{\RBThreeT}{Synthesis of Robust Distributed Systems\xspace}
+\newcommand{\KCOneT}{Partial-Observation and Stochastic Games\xspace}
+\newcommand{\KCTwoT}{Algorithmic Study of Infinite-State Games for Performance Analysis\xspace}
+\newcommand{\KCThreeT}{Game Theoretic Notions of Non-Functional Modeling\xspace}
+\newcommand{\ABOneT}{Parallel SAT Solving\xspace}
+\newcommand{\ABTwoT}{Beyond Bit-Blasting\xspace}
+\newcommand{\ABThreeT}{Rigorous Solver Engineering\xspace}
+\newcommand{\UEOneT}{Incremental Reasoning\xspace}
+\newcommand{\UETwoT}{Parallel QBF Solving\xspace}
+\newcommand{\CKOneT}{Relaxed Systems Engineering\xspace}
+\newcommand{\CKTwoT}{Trace Semantics for Probabilistic Systems\xspace}
+\newcommand{\RGOneT}{Probabilistic Analysis of Distributed Systems\xspace}
+% Macros for full task names:
+\newcommand{\THOneF}{Task~\THOne: \THOneT}
+\newcommand{\THTwoF}{Task~\THTwo: \THTwoT}
+\newcommand{\THThreeF}{Task~\THThree: \THThreeT}
+\newcommand{\HVOneF}{Task~\HVOne: \HVOneT}
+\newcommand{\HVTwoF}{Task~\HVTwo: \HVTwoT}
+\newcommand{\HVThreeF}{Task~\HVThree: \HVThreeT}
+\newcommand{\USOneF}{Task~\USOne: \USOneT}
+\newcommand{\USTwoF}{Task~\USTwo: \USTwoT}
+\newcommand{\RBOneF}{Task~\RBOne: \RBOneT}
+\newcommand{\RBTwoF}{Task~\RBTwo: \RBTwoT}
+\newcommand{\RBThreeF}{Task~\RBThree: \RBThreeT}
+\newcommand{\KCOneF}{Task~\KCOne: \KCOneT}
+\newcommand{\KCTwoF}{Task~\KCTwo: \KCTwoT}
+\newcommand{\KCThreeF}{Task~\KCThree: \KCThreeT}
+\newcommand{\ABOneF}{Task~\ABOne: \ABOneT}
+\newcommand{\ABTwoF}{Task~\ABTwo: \ABTwoT}
+\newcommand{\ABThreeF}{Task~\ABThree: \ABThreeT}
+\newcommand{\UEOneF}{Task~\UEOne: \UEOneT}
+\newcommand{\UETwoF}{Task~\UETwo: \UETwoT}
+\newcommand{\CKOneF}{Task~\CKOne: \CKOneT}
+\newcommand{\CKTwoF}{Task~\CKTwo: \CKTwoT}
+\newcommand{\RGOneF}{Task~\RGOne: \RGOneT}
+
+\newcommand{\cluI}{(Applications)\xspace}
+%\newcommand{\cluIx}{Cluster~I\xspace}
+\newcommand{\cluII}{(Reasoning Engines)\xspace}
+%\newcommand{\cluIIx}{Cluster~II\xspace}
+
+% macros for research lines:
+\newcommand{\LConc}{Distributed/Concurrency Line\xspace}
+\newcommand{\LReal}{Reliability Line\xspace}
+\newcommand{\LExpr}{Expressiveness Line\xspace}
+\newcommand{\LQuant}{Quantitative Line\xspace}
+\newcommand{\LProb}{Probabilistic Line\xspace}
+\newcommand{\LScale}{Scalability Line\xspace}
+\newcommand{\LCert}{Certification Line\xspace}
+
+%macros for Collaboration Topics
+\newcommand{\ctdescr}[1]{} % dont print descriptions of collab topics
+
+\newcites{gp,pTH,pHV,pCK,pUS,pRB,pKC,pAB,pUE,pRG}{%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}},%
+{\vspace*{-24pt}}}
+
+%\renewcommand{\floatpagefraction}{1}
+
+\pagestyle{empty}
+
+\definecolor{BackgroundBlue}{rgb}{0.87,0.87,0.91}
+\definecolor{MyDarkerBlue}{rgb}{0.31,0.51,0.74}
+\definecolor{White}{rgb}{1,1,1}
+
+\newboolean{printcomments}
+\setboolean{printcomments}{false}
+
+\ifthenelse{\boolean{printcomments}}
+{
+ \newcommand{\abnote}[1]{\todo[inline,caption={}]{AB says: #1}}
+ \newcommand{\rbnote}[1]{\todo[inline,caption={}]{RB says: #1}}
+ \newcommand{\pcnote}[1]{\todo[inline,caption={}]{PC says: #1}}
+ \newcommand{\kcnote}[1]{\todo[inline,caption={}]{KC says: #1}}
+ \newcommand{\uenote}[1]{\todo[inline,caption={}]{UE says: #1}}
+ \newcommand{\thnote}[1]{\todo[inline,caption={}]{TH says: #1}}
+ \newcommand{\cknote}[1]{\todo[inline,caption={}]{CK says: #1}}
+ \newcommand{\lknote}[1]{\todo[inline,caption={}]{LK says: #1}}
+ \newcommand{\usnote}[1]{\todo[inline,caption={}]{US says: #1}}
+ \newcommand{\asnote}[1]{\todo[inline,caption={}]{AS says: #1}}
+ \newcommand{\hvnote}[1]{\todo[inline,caption={}]{HV says: #1}}
+ \newcommand{\jwnote}[1]{\todo[inline,caption={}]{JW says: #1}} % Josef Widder
+ \newcommand{\rknote}[1]{\todo[inline,caption={}]{RK says: #1}}
+ \newcommand{\gwnote}[1]{\todo[inline,caption={}]{GW says: #1}}
+ \newcommand{\rgnote}[1]{\todo[inline,caption={}]{RG says: #1}}
+ \newcommand{\msnote}[1]{\todo[inline,caption={}]{MS says: #1}}
+ \newcommand{\fznote}[1]{\todo[inline,caption={}]{FZ says: #1}}
+ \newcommand{\fwfnote}[1]{\todo[inline,caption={}]{FWF says: #1}}
+ \newcommand{\ofwfnote}[1]{\todo[inline,caption={}]{FWF says: #1}}
+ \newcommand{\sjnote}[1]{\todo[inline,caption={}]{SJ says: #1}} % Swen Jacobs
+}{
+ \newcommand{\abnote}[1]{} % armin
+ \newcommand{\rbnote}[1]{}% roderick
+ \newcommand{\kcnote}[1]{}% krish
+ \newcommand{\uenote}[1]{}% uwe
+ \newcommand{\thnote}[1]{}% tom
+ \newcommand{\cknote}[1]{}% christoph
+ \newcommand{\lknote}[1]{}% laura
+ \newcommand{\usnote}[1]{}% ulrich
+ \newcommand{\asnote}[1]{}% ana
+ \newcommand{\hvnote}[1]{}% helmut
+ \newcommand{\jwnote}[1]{}% josef
+ \newcommand{\rknote}[1]{}% robert
+ \newcommand{\gwnote}[1]{}% georg
+ \newcommand{\rgnote}[1]{}% radu
+ \newcommand{\msnote}[1]{}% martina
+ \newcommand{\fznote}[1]{}% florian
+ \newcommand{\fwfnote}[1]{}% FWF
+ \newcommand{\ofwfnote}[1]{}% FWF - old template
+ \newcommand{\sjnote}[1]{}% Swen
+}
+
+
+\newcommand{\oursubsubsubsection}[1]{\smallskip\noindent\textbf{#1}}
+%\newcommand{\oursubsubsubsection}[1,2]{\smallskip\noindent\textbf{#1}: {\em #2.}
+
+%\newcommand{\pagebudget}[1]{\todo[inline]{Pagebudget: #1 page(s).}}
+\newcommand{\pagebudget}[1]{}
+%\newcommand{\PI}[1]{\noindent\textbf{Principal Investigator:} #1.}
+\newcommand{\AI}[1]{\noindent\textbf{Associated Investigators:} #1.}
+
+
+\newcounter{ct_count}
+\refstepcounter{ct_count}\label{colab:gamesFT} % to compensate for the removed labels
+\newcommand{\CTgamesFT}{CT~\ref{colab:gamesFT}\xspace}
+\newcommand{\CTgamesFTN}{\ref{colab:gamesFT}\xspace}
+\newcommand{\CTgamesFTT}{Multi-player Games for Fault-Tolerant Systems}
+
+\refstepcounter{ct_count}\label{colab:synthSS} % to compensate for the removed labels
+\newcommand{\CTsynthSS}{CT~\ref{colab:synthSS}\xspace}
+\newcommand{\CTsynthSSN}{\ref{colab:synthSS}\xspace}
+\newcommand{\CTsynthSST}{Robust Synthesis of Asynchronous Algorithms}
+
+\refstepcounter{ct_count}\label{colab:synthFT} % to compensate for the removed labels
+\newcommand{\CTsynthFT}{CT~\ref{colab:synthFT}\xspace}
+\newcommand{\CTsynthFTN}{\ref{colab:synthFT}\xspace}
+\newcommand{\CTsynthFTT}{Synthesis of Algorithms and Fault Models}
+
+\refstepcounter{ct_count}\label{colab:interpolationForSynthesis} % to compensate for the removed labels
+\newcommand{\CTinterpolationForSynthesis}{CT~\ref{colab:interpolationForSynthesis}\xspace}
+\newcommand{\CTinterpolationForSynthesisN}{\ref{colab:interpolationForSynthesis}\xspace}
+\newcommand{\CTinterpolationForSynthesisT}{Interpolation Methods for Synthesis }
+
+\refstepcounter{ct_count}\label{colab:logicFTDA} % to compensate for the removed labels
+\newcommand{\CTlogicFTDA}{CT~\ref{colab:logicFTDA}\xspace}
+\newcommand{\CTlogicFTDAN}{\ref{colab:logicFTDA}\xspace}
+\newcommand{\CTlogicFTDAT}{Verification of Fault-Tolerant Distributed Algorithms}
+
+\refstepcounter{ct_count}\label{colab:logicDAHoare} % to compensate for the removed labels
+\newcommand{\CTlogicDAHoare}{CT~\ref{colab:logicDAHoare}\xspace}
+\newcommand{\CTlogicDAHoareN}{\ref{colab:logicDAHoare}\xspace}
+\newcommand{\CTlogicDAHoareT}{Formalizing Distributed Algorithms Correctness Proofs in Hoare-style}
+\newcommand{\CTlogicDAHoareA}{Formalizing Dist. Alg. Correctness Proofs in Hoare-style}
+
+\refstepcounter{ct_count}\label{colab:compositional-prob} % to compensate for the removed labels
+\newcommand{\CTcompositionalprob}{CT~\ref{colab:compositional-prob}\xspace}
+\newcommand{\CTcompositionalprobN}{\ref{colab:compositional-prob}\xspace}
+\newcommand{\CTcompositionalprobT}{Compositional Probabilistic Reasoning and Code Generation}
+
+
+\refstepcounter{ct_count}\label{colab:progress-properties} % to compensate for the removed labels
+\newcommand{\CTprogressproperties}{CT~\ref{colab:progress-properties}\xspace}
+\newcommand{\CTprogresspropertiesN}{\ref{colab:progress-properties}\xspace}
+\newcommand{\CTprogresspropertiesT}{Quantitative Progress Properties for Concurrent Data Structures}
+
+\refstepcounter{ct_count}\label{colab:smodels} % to compensate for the removed labels
+\newcommand{\CTsmodels}{CT~\ref{colab:smodels}\xspace}
+\newcommand{\CTsmodelsN}{\ref{colab:smodels}\xspace}
+\newcommand{\CTsmodelsT}{Verification of Software Models}
+
+\refstepcounter{ct_count}\label{colab:dualprop} % to compensate for the removed labels
+\newcommand{\CTdualprop}{CT~\ref{colab:dualprop}\xspace}
+\newcommand{\CTdualpropN}{\ref{colab:dualprop}\xspace}
+\newcommand{\CTdualpropT}{Preprocessing and Dual Propagation for QBF}
+
+\refstepcounter{ct_count}\label{colab:synt-smodels} % to compensate for the removed labels
+\newcommand{\CTsyntsmodels}{CT~\ref{colab:synt-smodels}\xspace}
+\newcommand{\CTsyntsmodelsN}{\ref{colab:synt-smodels}\xspace}
+\newcommand{\CTsyntsmodelsT}{Synthesis of Software Models}
+
+\refstepcounter{ct_count}\label{colab:ed-solvers} % to compensate for the removed labels
+\newcommand{\CTedsolvers}{CT~\ref{colab:ed-solvers}\xspace}
+\newcommand{\CTedsolversN}{\ref{colab:ed-solvers}\xspace}
+\newcommand{\CTedsolversT}{Feedback Generation for Educational Solvers}
+
+\refstepcounter{ct_count}\label{colab:quantitativeVerif} % to compensate for the removed labels
+\newcommand{\CTquantitativeVerif}{CT~\ref{colab:quantitativeVerif}\xspace}
+\newcommand{\CTquantitativeVerifN}{\ref{colab:quantitativeVerif}\xspace}
+\newcommand{\CTquantitativeVerifT}{Quantitative Analysis and Verification}
+
+\refstepcounter{ct_count}\label{colab:localSearch} % to compensate for the removed labels
+\newcommand{\CTlocalSearch}{CT~\ref{colab:localSearch}\xspace}
+\newcommand{\CTlocalSearchN}{\ref{colab:localSearch}\xspace}
+\newcommand{\CTlocalSearchT}{Probabilistic Smoothening of Local Search}
+
+\refstepcounter{ct_count}\label{colab:theoryFO} % to compensate for the removed labels
+\newcommand{\CTtheoryFO}{CT~\ref{colab:theoryFO}\xspace}
+\newcommand{\CTtheoryFON}{\ref{colab:theoryFO}\xspace}
+\newcommand{\CTtheoryFOT}{Efficient Theory Solvers in  First-Order Reasoning}
